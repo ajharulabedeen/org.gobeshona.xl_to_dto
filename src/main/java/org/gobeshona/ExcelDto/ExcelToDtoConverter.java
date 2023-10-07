@@ -29,7 +29,7 @@ import java.util.Optional;
 public class ExcelToDtoConverter {
     private static final Logger logger = LoggerFactory.getLogger(ExcelToDtoConverter.class);
 
-    public <T> List<T> excelToDtoListGeneric(InputStream inputStream, T dto) throws Exception {
+    public <T> List<T> excelToDtoList(InputStream inputStream, T dto) throws Exception {
         List<T> dtoList = new ArrayList<>();
         try {
             XSSFWorkbook workbook = new XSSFWorkbook(inputStream);
